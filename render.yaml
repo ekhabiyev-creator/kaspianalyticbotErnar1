@@ -1,0 +1,12 @@
+services:
+  - type: worker
+    name: kaspianalyticbot
+    runtime: python
+    region: frankfurt
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: API_TOKEN
+        value: 8595546863:AAHcrGTiPzWENxVN8F6DhTK1MN5PuYYOsAg
+    plan: free
