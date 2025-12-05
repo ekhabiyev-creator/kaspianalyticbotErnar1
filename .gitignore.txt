@@ -1,7 +1,3 @@
-venv/
-env/
 __pycache__/
-*.pyc
 .env
-local.db
-*.log
+data/local.db
